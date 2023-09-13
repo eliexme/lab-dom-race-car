@@ -1,4 +1,4 @@
-window.onload = function () {
+/* window.onload = function () {
   const startButton = document.getElementById("start-button");
   const restartButton = document.getElementById("restart-button");
 
@@ -10,3 +10,20 @@ window.onload = function () {
     console.log("start game");
   }
 };
+ */
+
+window.onload = function (){
+  const startButton = document.getElementById('start-button')
+  let game
+
+  function startGame(){
+    console.log('Hola Elisa')
+    game = new Game()
+    game.start()
+  }
+
+  startButton.addEventListener('click', function(){
+    startGame()
+    
+  })
+}
